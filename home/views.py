@@ -91,8 +91,8 @@ def user_login(request):
           return redirect('home')
 
         else:
-
-          return redirect('user_login',{'hi': 'invalid username or password'})
+          contex2={'hi':'invalid username or password'}
+          return render(request,'home/joinus.html',{'hi':'Invalid Username or Password'})
 
     else:
         return render(request,'home/joinus.html')
