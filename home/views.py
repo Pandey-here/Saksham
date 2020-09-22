@@ -28,8 +28,8 @@ def donate(request):
     return render(request,'home/donate.html')
 
 
-#def current(request):
-    #return render(request,'home/current.html')
+def sitemap(request):
+    return render (request,'home/sitemap.xml')
 def blog(request):
     return render(request,'home/blog.html')
 
