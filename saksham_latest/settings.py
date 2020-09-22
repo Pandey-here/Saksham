@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['www.sakshamfoundations.in']
 
-
 # Application definition
 
 INSTALLED_APPS = [
