@@ -44,9 +44,19 @@
                   <a class="dropdown-item" href="{% url 'gallary' %}">Gallery</a>
                 </div>
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn btn-warning" type="button" style="color: black;" href="#" id="nav-button">Join Us<span class="sr-only">(current)</span></a>
-              </li>
+              {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <form method="post" action="{% url 'user_logout' %}">
+
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-success" id="nav-button">Logout</button>
+                    </form>
+                </li>
+               {% else %}
+                <li class="nav-item">
+                  <a class="nav-link btn btn-warning" type="button" style="color: black;" href="{% url 'user_login' %}" id="nav-button" name="login">Join Us</a>
+                </li>
+                {% endif %}
             </ul>
           </div>
         </nav>
