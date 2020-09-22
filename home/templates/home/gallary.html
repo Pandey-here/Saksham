@@ -44,6 +44,7 @@
                   <a class="dropdown-item" href="{% url 'gallary' %}">Gallery</a>
                 </div>
               </li>
+<<<<<<< HEAD
               {% if user.is_authenticated %}
                 <li class="nav-item">
                   <form method="post" action="{% url 'user_logout' %}">
@@ -57,6 +58,11 @@
                   <a class="nav-link btn btn-warning" type="button" style="color: black;" href="{% url 'user_login' %}" id="nav-button" name="login">Join Us</a>
                 </li>
                 {% endif %}
+=======
+              <li class="nav-item">
+                <a class="nav-link btn btn-warning" type="button" style="color: black;" href="{% url 'user_login' %}" id="nav-button">Join Us<span class="sr-only">(current)</span></a>
+              </li>
+>>>>>>> 2ab53c2734aecb5e9c6f06ee9cd19a38875d2480
             </ul>
           </div>
         </nav>

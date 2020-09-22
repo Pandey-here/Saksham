@@ -23,15 +23,17 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'm3pd(gk3uw(e@#%--kfkwo9xnDUnjshuH$Y*%#)()^@5(stpw5w2u+^u4i%amp!zedzqr'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG= True
 
-ALLOWED_HOSTS = ['www.sakshamfoundations.in']
+ALLOWED_HOSTS = []
+#'www.sakshamfoundations.in'
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
+
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
