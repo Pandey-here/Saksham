@@ -12,7 +12,7 @@ footer
 }
 #footer
 {
-    background-image: url("../images/footer-background.jpg");
+    background-image: url("../dist/img/footer-background.jpg");
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: darken;
 }
@@ -75,11 +75,19 @@ footer
     footer
     {
         margin-top: 5%;
+        height: fit-content;
+    }
+    .footer-image
+    {
+        max-height: 30%;
+        max-width: 30%;
+        margin-left: 41%;
     }
     #left-coloumn
     {
         text-align: center;
         margin-top:2%;
+        height: 110px;
     }
     #company-name
 {
@@ -94,7 +102,7 @@ footer
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
     font-family: 'sanskritnormal',Fallback,'Roboto Mono', monospace;
-    font-size: 10px;
+    font-size: 2.5em;
     font-weight: 700;
 }
     #right-coloumn
